@@ -1,0 +1,351 @@
+
+body {
+  margin: 0;
+}
+.link-boxes {
+  /* width: var(--main-width-p); */
+  padding: 1.62vw 18.54vw 0 18.54vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-boxes .box {
+  padding: 0;
+}
+.link-boxes .logo {
+  width: 6.93vw;
+	height: 5.94vw;
+}
+
+.link-boxes .box .link_name {
+  color: #fff;
+  font-family: Arial-BoldMT;
+  font-size: var(--p-title-font-size);
+  font-weight: bold;
+  position: relative;
+}
+.link-boxes .box li {
+  margin:0 0  0.94vw 0;
+  list-style: none;
+  font-family: Arial;
+}
+
+.link-boxes .box li a {
+  color: #fff;
+  font-size: var(--p-base-font-size);
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.ic_black {
+  width: 0.44vw;
+  height: 0.48vw;
+}
+.link-boxes .box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.link-boxes .link-img .img-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1.53vw;
+}
+.link-boxes .link-img .img-box:last-child{
+  flex-direction: column;
+  gap: 0;
+}
+.link-boxes .link-img .img-box .icons {
+  display: flex;
+  align-items: center;
+  gap: 0.83vw;
+}
+
+.link-boxes .link-img .img-box .icons a,
+.link-boxes .link-img .img-box .icons .tg_img {
+  width: 2.58vw;
+  height: 2.58vw;
+}
+
+.link-boxes .link-img .img-box .icons .ic_ssl {
+  width: 8.39vw;
+  height: 3.59vw;
+}
+
+.link-boxes .link-img .img-box .icons .ic_100 {
+  width: 8.96vw;
+  height: 3.96vw;
+}
+.website-remark {
+  color: #fff;
+  width: 90vw;
+  margin: auto;
+  width: var(--main-width-p);
+  padding: 0vw 13.33vw;
+  font-family: ArialMT;
+  font-size: 0.63vw;
+  word-break: break-word;
+  line-height: 1.33vw;
+  text-align: center;
+}
+.last-d {
+  padding: 0 0 0.41vw 0;
+}
+.bottom-banner {
+  width: var(--main-width-p);
+  height: 4.38vw;
+	background-color: #3c0000;
+  padding: 0 18.75vw;
+  display: none;
+  align-items: center;
+  gap: 20vw;
+  position: fixed;
+  bottom: 0;
+}
+.footer-t {
+  margin-bottom: 4.37vw;
+}
+
+.bottom-banner .down_btn {
+  position: relative;
+  left: 0;
+  top: 0;
+  background: url("../images/Kdl6ES1s7c0g.png");
+  background-size: 100% 100%;
+  width: 11.04vw;
+  height: 2.83vw;
+  border-radius: 0.83vw;
+}
+
+.link-boxes ul {
+  margin: 0;
+}
+.footer_ic_return {
+  width: 2.6vw;
+  height: 2.6vw;
+}
+.bottom-banner .logo {
+  width: 3.85vw;
+	height: 3.33vw;
+  display: block;
+}
+.bottom-banner .ic_down {
+  width: 1.41vw;
+  height: 1.61vw;
+  margin-left: 1.09vw;
+}
+.bottom-banner .down_font{
+  color: #fff;
+  font-size: 1.54vw;
+  margin: 0;
+  margin-top: -0.2vw;
+}
+.link-boxes .m{
+  display: none;
+}
+.link-boxes  .p{
+  display: block;
+}
+@media (max-width: 900px) {
+
+  .link-boxes .box {
+    width: calc(100% / 3 - 2vw);
+  }
+  .link-boxes .box:nth-child(3) {
+    width: calc(100% / 4 - 2vw);
+  }
+  .link-boxes .logo {
+    width: 6.93vw;
+    height: 5.94vw;
+    margin-right: 1.11vw;
+  }
+
+  .link-boxes .box li a {
+    font-size: 1.84vw;
+  }
+  .link-boxes .link-img {
+    width: calc(100% / 4 + 1vw);
+    display: flex;
+    flex-direction: column;
+    /* gap: 12vw; */
+  }
+
+  .link-boxes .link-img .img-box {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .link-boxes .link-img .icons {
+    display: flex;
+  }
+  .link-boxes .link-img .img-box .icons a,
+  .link-boxes .link-img .img-box .icons .tg_img {
+    width: 5.19vw;
+    height: 5.19vw;
+  }
+  .link-boxes .link-img .img-box .icons .ic_ssl {
+    width: 15.39vw;
+    height: 5.94vw;
+  }
+
+
+  .link-boxes .link-img .img-box .icons .ic_100 {
+    width: 15.17vw;
+    height: 6.33vw;
+  }
+  .link-boxes .box .link_name {
+    font-size: 2.56vw;
+  }
+  .website-remark {
+    line-height: 2.53vw;
+    font-size: 1.64vw;
+  }
+  .last-d {
+    padding: 1.01vw 0 3.21vw 0;
+  }
+  .ic_black {
+    width: 1.24vw;
+    height: 1.38vw;
+  }
+}
+@media (max-width: 767px) {
+
+  .bottom-banner {
+    width: var(--main-width-a);
+    height: 12.25vw;
+    padding: 0 2.78vw;
+    background-color: #3e0001;
+    display: flex;
+    align-items: center;
+    gap: 20vw;
+    position: relative;
+  }
+  .footer_ic_return {
+    width: 8.33vw;
+    height: 8.33vw;
+    position: fixed;
+    bottom: 2.55vw;
+    right: 2.78vw;
+    display: none;
+  }
+  .footer-t {
+    margin-bottom:0;
+  }
+  .bottom-banner .down_btn {
+    width: 35.83vw;
+    height: 8.75vw;
+  }
+  .bottom-banner .down_font{
+    font-family: Arial-BoldMT;
+    font-size: 4.47vw;
+    color: #fff;
+  }
+  .bottom-banner .ic_down{
+    width: 3.89vw;
+	  height: 4.44vw;
+  }
+  .bottom-banner .logo {
+    width: 12.08vw;
+    height: 10.69vw;
+    display: block;
+  }
+  .website-remark {
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.89vw;
+  }
+  .ic_black {
+    width: 1.54vw;
+    height: 1.68vw;
+  }
+ 
+  .link-boxes {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0;        
+    width: var(--main-width-a);
+    padding: 2.82vw 2.78vw;
+    margin: auto;
+  }
+
+  .link-boxes .box .link_name {
+    font-size: 4.45vw;
+  }
+
+  .link-boxes .box li {
+    line-height: 5.83vw;
+  }
+
+  .link-boxes .box li a {
+    font-size: 3.13vw;
+  }
+
+
+  .link-boxes .box {
+    width: auto;
+  }
+  .link-boxes .box:nth-child(3){
+    /* margin-left: 22.64vw; */
+    width: auto;
+  }
+  .link-boxes .logo {
+    width: 100%;
+    height: 17.08vw;
+    margin: 0;
+    text-align: center;
+  }
+  .link-boxes .logo img{
+    width: 19.58vw;
+	  height: 17.08vw;
+  }
+
+  .link-boxes .link-img {
+    width: 100%;
+    gap: 9vw;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .link-boxes .link-img .img-box {
+    width: auto;
+    justify-content: space-between;
+  }
+  .link-boxes .link-img .img-box:last-child{
+    gap: 1.53vw;
+  }
+  .link-boxes .link-img .img-box .icons a,
+  .link-boxes .link-img .img-box .icons .tg_img {
+    width: 8.19vw;
+    height: 8.19vw;
+  }
+
+  .link-boxes .link-img .img-box .icons .ic_ssl {
+    width: 16.39vw;
+    height: 6.94vw;
+  }
+
+  .link-boxes .link-img .img-box .icons .ic_100 {
+    width: 19.17vw;
+    height: 8.33vw;
+  }
+  .website-remark {
+    line-height: 4.23vw;
+  }
+  
+  .ic_black {
+    width: 1.94vw;
+    height: 2.18vw;
+  }
+  .link-boxes .m{
+    display: block;
+  }
+  .link-boxes  .p{
+    display: none;
+  }
+}

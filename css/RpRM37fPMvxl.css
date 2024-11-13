@@ -1,0 +1,404 @@
+.platform-container {
+  padding-bottom: 2.98vw;
+  width: var(--main-width-p);
+  margin: auto;
+  height: 16.93vw;
+  background-color: var(--container-bg);
+  box-shadow: 0vw 0.42vw 0.83vw 0vw rgba(0, 0, 0, 0.05);
+  border-radius: 0.52vw;
+  margin: auto;
+}
+#gamePlatform {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+#gamePlatform .platform-item {
+  width: calc(100% / 2 - 7.44vw);
+  padding-left: 7.44vw;
+  display: flex;
+  align-items: center;
+  color: #281414;
+  text-align: center;
+}
+#gamePlatform .platform-item:nth-child(2n) {
+  padding-left: 5.44vw;
+  width: calc(100% / 2 - 5.44vw);
+}
+.platform-item:nth-child(n + 3) {
+  position: relative;
+  padding-top: 1.8vw;
+}
+.platform-item:nth-child(n + 3)::after {
+  position: absolute;
+  width: calc(57.76vw / 2);
+  top: 0.6vw;
+  left: 2.37vw;
+  content: "";
+  border-top: solid 0.05vw #e1e1e1;
+}
+.platform-item:nth-child(2n + 2)::after {
+  left: 0;
+}
+#gamePlatform .platform-item .item_icon {
+  width: 4.17vw;
+  height: 4.17vw;
+  margin-bottom: 0.92vw;
+  margin-right: 0.57vw;
+}
+#gamePlatform .platform-item b,
+.home-blog b {
+  font-family: MyriadPro-Bold;
+  font-size: var(--p-title-font-size);
+  line-height: 1.5vw;
+  -webkit-box-orient: inherit;
+  display: -webkit-box;
+}
+.home-blog b{
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#gamePlatform .platform-item .item_content {
+  font-size: 0.63vw;
+  color: #404040;
+  text-align: left;
+  margin-top: 0.61vw;
+}
+.platform-item .item_content .item_content_line {
+  margin-bottom: 0.62vw;
+  position: relative;
+  padding-left: 0.84vw;
+  display: flex;
+  align-items: center;
+}
+.platform-item .item_content .item_content_line::before {
+  border-top: 0.1vw solid;
+  border-right: 0.1vw solid;
+  border-color: #030303;
+  content: "";
+  position: absolute;
+  left: 0.24vw;
+  transform: translate(-50%, -50%) rotate(120deg);
+  height: 0.2vw;
+  width: 0.47vw;
+}
+.gamezy-container {
+  padding-bottom: 2.14vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.67vw;
+  background-color: #fcf3ea;
+}
+.platform-container h2,
+.gamezy-container h2,
+#homeBlog h2,
+.faqs-container h2 {
+  margin-top: 0;
+  width: 100%;
+  height: 3.13vw;
+  line-height: 3.13vw;
+  color: #790d10;
+  font-size: 1.46vw;
+  box-shadow: 0vw 0.42vw 0.83vw 0vw rgba(0, 0, 0, 0.05);
+  border-radius: 0.68vw 0.68vw 0vw 0vw;
+}
+
+#gameGamezy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.7vw;
+  width: 100%;
+  margin-top: 1.14vw;
+}
+#gameGamezy .gamezy_item {
+  width: 8.85vw;
+  position: relative;
+  cursor: pointer;
+}
+#gameGamezy .gamezy_item .item_icon {
+  margin-top: -1.42vw;
+  width: 9.85vw;
+  height: 8.85vw;
+}
+.expand_btn {
+  background-color: #720304;
+  color: #fff;
+  border-radius: 0.31vw;
+  width: 7.81vw;
+  height: 2.66vw;
+  line-height: 2.66vw;
+  font-family: MyriadPro-Bold;
+  font-weight: bold;
+  font-size: 1.04vw;
+  margin-top: 1.56vw;
+  cursor: pointer;
+}
+.expand_btn:focus {
+  background: #723232;
+}
+
+.faqs-container {
+  height: auto;
+  padding-bottom: 2.71vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  background: #fcf3ea;
+  padding-left: 21.19vw;
+  padding-right: 20.78vw;
+}
+.gamezy-container h2,
+#homeBlog h2,
+.faqs-container h2 {
+  box-shadow: none;
+  border-radius: unset;
+  line-height: 4.13vw;
+}
+#faqsDom {
+  text-align: left;
+}
+#faqsDom .faqs-item {
+  margin-bottom: 1.58vw;
+}
+#faqsDom .faqs-item b {
+  font-size: var(--p-title-font-size);
+}
+#faqsDom .item_content {
+  font-size: var(--p-base-font-size);
+  margin-top: 0.36vw;
+  color: #5e5e5e;
+}
+.faqs-container .expand_btn {
+  margin-top: 0;
+}
+#homeBlog h2,
+.faqs-container h2 {
+  color: #191919;
+}
+.blog-container {
+  width: var(--main-width-p);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2.5vw;
+}
+.home-blog {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.4vw;
+}
+.home-blog .blog-item {
+  display: flex;
+  width: calc(50% - 3.04vw);
+}
+.home_blog_imgs {
+  width: 9.38vw;
+  height: 11.46vw;
+  position: relative;
+}
+.home_blog_data {
+  width: calc(100% - 10.42vw);
+  margin-left: 1.04vw;
+  text-align: left;
+  position: relative;
+}
+.home_blog_img_txt {
+  position: absolute;
+  bottom: 1.09vw;
+  width: calc(100% - 1.06vw);
+  font-family: MyriadPro-Bold;
+  font-size: 1.04vw;
+  color: #ffffff;
+  padding: 0px 0.53vw;
+  text-align: center;
+}
+.home_blog_data_c {
+  font-size: var(--p-base-font-size);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  color: #666666;
+}
+.home_blog_more {
+  width: 5.63vw;
+  height: 1.93vw;
+  border-radius: 0.26vw;
+  border: solid 0.05vw #808080;
+  font-family: MyriadPro-Bold;
+  font-size: 0.83vw;
+  color: #5b0a1f;
+  text-align: center;
+  line-height: 1.93vw;
+  position: absolute;
+  bottom: 0;
+}
+.blog-container .expand_btn {
+  margin-top: 2.6vw;
+}
+@media screen and (max-width: 767px) {
+  .platform-container {
+    width: var(--main-width-a);
+    height: auto;
+    box-shadow: none;
+    border-radius: unset;
+  }
+  #gamePlatform .platform-item .item_icon {
+    width: 25vw;
+    height: 25vw;
+    margin-bottom: 0;
+  }
+  #gamePlatform {
+    gap: 1.5vw;
+  }
+  #gamePlatform .platform-item {
+    width: calc(100% / 2 - 1.5vw);
+    flex-direction: column;
+    padding-left: 0;
+  }
+  #gamePlatform .platform-item:nth-child(2n) {
+    padding-left: 0;
+    width: calc(100% / 2);
+  }
+  .platform-item:nth-child(n + 3) {
+    padding-top: 0;
+  }
+  .platform-item:nth-child(n + 3)::after {
+    display: none;
+  }
+  .platform-item .item_data {
+    margin-top: 1.08vw;
+  }
+  .home-blog b,
+  #gamePlatform .platform-item b {
+    font-size: 3.18vw;
+    line-height: 4vw;
+    margin: 2.13vw 0;
+  }
+
+  #gamePlatform .platform-item .item_content {
+    font-size: 2.63vw;
+    line-height: 5vw;
+  }
+  .platform-item .item_content .item_content_line {
+    margin-bottom: 1.82vw;
+    line-height: 2.55vw;
+    padding-left: 0;
+    justify-content: center;
+  }
+  .platform-item .item_content .item_content_line::before {
+    display: none;
+  }
+  .platform-container h2,
+  .gamezy-container h2,
+  #homeBlog h2,
+  .faqs-container h2 {
+    color: var(--main-text-color);
+    font-size: 4.86vw;
+    margin-bottom: 5.56vw;
+    height: auto;
+    line-height: unset;
+    box-shadow: none;
+    border-radius: unset;
+  }
+
+  .gamezy-container h2,
+  #homeBlog h2 {
+    margin: 4.56vw 0 4.56vw 0;
+  }
+  .gamezy-container {
+    width: 100vw;
+    margin: 0 -2.78vw;
+    padding-bottom: 5.14vw;
+  }
+  .faqs-container {
+    width: calc(100vw - 2.78vw * 3);
+    padding: 4.11vw 5.56vw 4.11vw 2.78vw;
+    margin: 0 -2.78vw;
+  }
+  .faqs-container .expand_btn {
+    margin-top: 2.14vw;
+  }
+  #gameGamezy {
+    gap: 1.25vw;
+    margin-top: 0;
+  }
+  #gameGamezy .gamezy_item {
+    width: calc(100% / 2 - 4.85vw);
+    display: flex;
+    justify-content: center;
+  }
+  #gameGamezy .gamezy_item:nth-child(n+3){
+    margin-top: 5vw;
+  }
+  #gameGamezy .gamezy_item .item_icon {
+    width: 30.11vw;
+    height: 29.97vw;
+    margin-top: -5vw;
+    margin-left: -2vw;
+  }
+  .blog-container .expand_btn,
+  .expand_btn {
+    width: 25.14vw;
+    height: 7.08vw;
+    line-height: 7.08vw;
+    font-size: 3.33vw;
+    border-radius: 1.39vw;
+    margin-top: 5.14vw;
+  }
+  .blog-container {
+    width: var(--main-width-a);
+    padding-bottom: 5.14vw;
+  }
+  .home-blog {
+    flex-direction: column;
+  }
+  .home-blog .blog-item {
+    width: 100%;
+  }
+  .home_blog_imgs {
+    width: 27.78vw;
+    height: 30.69vw;
+  }
+  .home_blog_data {
+    width: calc(100% - 32.78vw);
+    margin-left: 5vw;
+  }
+  .home_blog_data_c {
+    font-size: 3.06vw;
+    line-height: 3.33vw;
+    -webkit-line-clamp: 4;
+    margin-top: 1.67vw;
+  }
+  .home_blog_more {
+    width: 17.64vw;
+    height: 5.14vw;
+    border-radius: 0.69vw;
+    border: solid 0.14vw #808080;
+    font-size: 2.78vw;
+    line-height: 6.14vw;
+  }
+  #faqsDom {
+    text-align: left;
+  }
+  #faqsDom .faqs-item {
+    margin-bottom: 2.28vw;
+  }
+  .home_blog_img_txt,
+  #faqsDom .faqs-item b {
+    font-size: 3.33vw;
+  }
+  #faqsDom .item_content {
+    font-size: 3.06vw;
+    line-height: 3.45vw;
+    margin-top: 1.86vw;
+  }
+}
